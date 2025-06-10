@@ -28,6 +28,15 @@ export default {
       required: true
     }
   },
+  mounted() {
+    // Emit loaded event for WeWeb integration
+    this.$emit('trigger-event', {
+      name: 'footer:loaded',
+      event: {
+        timestamp: new Date().toISOString()
+      }
+    })
+  },
   computed: {
     footerStyle() {
       return {
