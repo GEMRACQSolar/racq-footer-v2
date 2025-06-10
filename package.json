@@ -1,0 +1,1 @@
+{\n  "name": "racq-footer-v2",\n  "version": "1.0.0",\n  "description": "RACQ branded footer component for WeWeb v2",\n  "main": "wwElement.vue",\n  "scripts": {\n    "dev": "weweb dev",\n    "build": "weweb build"\n  },\n  "dependencies": {\n    "@weweb/cli": "latest"\n  },\n  "devDependencies": {},\n  "license": "MIT"\n}
