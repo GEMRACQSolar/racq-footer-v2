@@ -8,6 +8,13 @@ module.exports = {
       icon: 'fas fa-copyright'
     }
   },
+  triggerEvents: [
+    {
+      name: 'footer:loaded',
+      label: { en: 'On footer loaded' },
+      event: {}
+    }
+  ],
   properties: {
     backgroundColor: {
       label: {
