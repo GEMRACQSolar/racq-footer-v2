@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   editor: {
     label: {
       en: 'RACQ Footer v2'
@@ -8,13 +8,7 @@ module.exports = {
       icon: 'fas fa-copyright'
     }
   },
-  triggerEvents: [
-    {
-      name: 'footer:loaded',
-      label: { en: 'On footer loaded' },
-      event: {}
-    }
-  ],
+  
   properties: {
     backgroundColor: {
       label: {
@@ -72,5 +66,15 @@ module.exports = {
       },
       hidden: content => !content.showLinks
     }
-  }
+  },
+  
+  events: [
+    {
+      name: 'footer:loaded',
+      label: 'On Footer Loaded',
+      eventSchema: {
+        timestamp: { type: 'string', label: 'Timestamp' }
+      }
+    }
+  ]
 }
